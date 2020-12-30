@@ -30,6 +30,7 @@ body {
 
 .registration__right {
   flex-basis: 70%;
+  padding-top: 20px;
 }
 
 .registration__left-logo-img {
@@ -42,7 +43,14 @@ body {
 }
 
 .registration__left-wrapper {
+  margin: auto; 
+}
+
+.registration-account__wrapper {
   margin: auto;
+  max-width: 450px;
+  padding: 0 21px; 
+  text-align: center;
 }
 
 .registration__left-text {
@@ -51,6 +59,98 @@ body {
   font-weight: 500;
   color: #fff;
 }
+
+/* registration account */
+
+.registration-account__title {
+  font-size: 26px;
+  text-align: center;
+  font-family: Arial,sans-serif;
+  max-width: 768px;
+  margin: 0 auto 10px;
+  font-weight: bold;
+  color: #33475b;
+}
+
+.registration-account__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  font-family: sans-serif;
+  max-width: 450px;
+  margin: 0 auto 30px;
+  color: #33475b;
+}
+
+.registration-account__sign-icon {
+  width: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: sans-serif;
+  background: #fff;
+}
+
+.registration-account__sign-text {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.registration-account__sign {
+  position: relative;
+  display: block;
+  border-radius: 5px;
+  padding: 11px 0;
+  margin-bottom: 20px;
+  color: #fff;
+  background: #5089E8;
+}
+
+.registration-account__sign-icon-wrap {
+  position: absolute;
+  left: 0;
+}
+
+.registration-account__form-lines {
+  position: relative;
+  color: rgb(203,217,232);
+}
+
+.registration-account__form-lines::before {
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background: rgb(203,217,232);
+  transform: translate(-35px, -4px);
+}
+
+.registration-account__form-lines::after {
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background: rgb(203,217,232);
+  transform: translate(35px, -4px);
+}
+
+.registration-account__input {
+  width: 100%;
+  padding: 9px 10px;
+  border-radius: 3px;
+  border: 1px solid #cbd6ea;
+  background: #f5f8fa;
+}
+
+.registration-account__form-title {
+  text-align: left;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #33475b;
+  margin-bottom: 10px;
+}
+
+
 
 </style>
 <body>
@@ -75,6 +175,22 @@ body {
             <div class="registration-account__subtitle">
               Free forever. No credit card needed.
             </div>
+            <a class="registration-account__sign">         
+             <span class="registration-account__sign-icon-wrap">
+               <img class="registration-account__sign-icon" src="./sign-icon.png" alt="">
+             </span>
+              <span class="registration-account__sign-text">Sign up with Google</span>
+            </a>
+             <span class="registration-account__form-lines">OR</span>
+            <form action="" class="registration-account__form">
+             <p class="registration-account__form-title">First name *</p>
+             <input class="registration-account__input" type="text">
+             <p class="registration-account__form-title">Last name *</p>
+             <input class="registration-account__input" type="text">
+             <p class="registration-account__form-title">Email address *</p>
+             <input class="registration-account__input" type="text">
+
+            </form>
           </div>
         </div>
       </div>
